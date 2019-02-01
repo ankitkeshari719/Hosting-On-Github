@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS file -->
+    <link rel="shortcut icon" type="text/png" href="imgs/favicon.png" />
+    <title>Hosting on GitHub</title>
+  </head>
+
+  <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-md navbar-dark bg-primary py-0 fixed-top"
+    >
+      <a class="navbar-brand" href="#"
+        ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Tech Talk</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navLinks"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-jumbotron">HOME</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-description">GitHub</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-steps">Hosting</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      id="section-jumbotron"
+      class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center"
+    >
+      <div class="container text-center">
+        <h1 class="display-1 text-primary">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </h1>
+        <p class="display-4 d-none d-sm-block">
+          Hosting an app on GitHub
+        </p>
+        <p class="lead">
+          GitHub is a great place for hosting your HTML websites. It’s free and
+          you can even use your own domain names.
+        </p>
+        <p class="lead">
+          This blog let you know a step by step way to host your site on github.
+        </p>
+        <h1>
+          <a href="#section-description"
+            ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+          ></a>
+        </h1>
+      </div>
+    </section>
+    <div class="container">
+      <section id="section-description">
+        <h2 class="display-4 text-center">What is GitHub?</h2>
+        <div id="description">
+          <p>
+            GitHub is Git’s cloud-based <b>publishing tool</b> and
+            <b>hosting platform</b>. It also has a desktop application for
+            locally storing projects. It was developed by Chris Wanstrath, PJ
+            Hyett, Tom Preston-Werner and Scott Chacon using Ruby on Rails, and
+            started in February 2008. The company, GitHub, Inc., has existed
+            since 2007 and is located in San Francisco.
+          </p>
+          <p>
+            Git is used by programmers, developers, and designers to store
+            projects and keep track of changes to their files. It basically is a
+            version control system like any other like
+            <a href="http://www.nongnu.org/cvs/" target="blank">CVS</a>
+            and<a href="http://subversion.tigris.org/"> Subversion</a>.
+          </p>
+          <p>
+            Now, what makes git different from other version control systems is
+            Git is a distributed system . In addition to connecting to a central
+            repository developers can connect to another developers repository.
+            This allows teams to share code without affecting the central
+            repository.
+          </p>
+        </div>
+      </section>
+      <section id="section-steps">
+        <h2 class="display-4 text-center">
+          Steps for Hosting a Website on GitHub
+        </h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p class="lead">
+              Create a GitHub account on
+              <a href="https://github.com/" target="blank">GitHub</a> site.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Download
+              <a href="https://git-scm.com/download/win" target="blank">Git </a>
+              depending on your operating system (Window/Mac/Linux). Install it
+              and open the app (Git UI) then log in using the account you just
+              created.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Go to
+              <a href="https://github.com/" target="blank">GitHub</a> site,
+              login using your github credencial and click on
+              <span class=" btn btn-success btn-sm"
+                ><i class="fa fa-github-square" aria-hidden="true"></i>
+                New</span
+              >
+              button to create a new repository.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Now, open your folder into git bash on your desktop.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Initialise git using
+              <span class="command">git init</span> command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/initialized_git.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Use <span class="command">git status</span> command to check the
+              status of all files.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/git_status.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Add your files to master (default branch provided by git) branch
+              using
+              <span class="command">git add &lt;Filename&gt;</span> command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/add_readme.PNG" />
+            <p class="mt-2">
+              <em>Note:</em> You can add all file using
+              <span class="command">git add .</span> command.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Commit your changes using
+              <span class="command">git commit -m "message"</span>
+            </p>
+            <img class="img-fluid mt-2" src="imgs/commit.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Go to <a href="https://github.com/" target="blank">GitHub</a> site
+              and open your created repository. Now, you have to clone your
+              repository remote url.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/clone.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Add your remote url in your application using
+              <span
+                >git remote add origin &lt;Remote url that you just copied.
+                &gt;</span
+              >
+              command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/add_remote.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Push your changes to your repository using
+              <span class="command">git push -u origin master</span>
+              command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/push_to_master.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Create a new branch <span class="text-success">gh-pages</span> in
+              repository using
+              <span class="command">git checkout -u gh-pages</span>
+              command.
+            </p>
+            <img
+              class="img-fluid mt-2"
+              src="imgs/create_and_switch_to_gh-pages_branch.PNG"
+            />
+            <p class="mt-2"><em>Note:</em> Branch name must be gh-pages.</p>
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Add, commit and push all your application files to
+              <span class="command">gh-pages</span> branch.
+            </p>
+            <ul>
+              <li>git status</li>
+              <li>git add .</li>
+              <li>git commit -m "Your message"</li>
+              <li>git push origin gh-pages</li>
+            </ul>
+            <img class="img-fluid mt-2" src="imgs/Working_on_new branch.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Now, switch back to master branch using
+              <span class="command">git checkout master</span>
+              command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/switch_to_master.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Merge gh-pages branch to master using
+              <span class="command">git merge gh-pages</span>
+              command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/merge_branch.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Againg, push your changes to your repository using
+              <span class="command">git push -u origin master</span>
+              command.
+            </p>
+            <img class="img-fluid mt-2" src="imgs/push_to_repo.PNG" />
+          </li>
+          <li class="list-group-item">
+            <p class="lead">
+              Your website is ready, check
+              your-username.github.io/&lt;repository_name&gt;.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://ankitkeshari719.github.io/Hosting-On-Github/"
+                  target="blank"
+                  >https://ankitkeshari719.github.io/Hosting-On-Github/</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small primary-color pt-4 mt-2">
+      <!-- Footer Elements -->
+      <div class="container"></div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a
+          href="https://www.linkedin.com/in/ankit-keshari-a2937094/"
+          target="blank"
+        >
+          ankit@keshari</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding smooth scroll -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.0/smooth-scroll.min.js"
+      integrity="sha256-HweAtRDpNtoNQT2vqAStOGsOXUmXZyciQAHG66SlhXY="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(function() {
+        var scroll = new SmoothScroll('a[href*="#section-"]');
+      });
+    </script>
+    <!-- MDB core JavaScript -->
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"
+    ></script>
+  </body>
+</html>
